@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="stylechecklists-paper-1.css">-->
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    img{
+       width: 100%;
+       height: 25vh;
+       object-fit: cover;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Five columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #e5e5e5;
+          width: 30%;
+          height: auto;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #a69cac;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border-top: 1px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 100%;
+          display: none;
+        }
+
+        /* Clear floats after the tab */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+</style>
+<body>
+
+<h2 style="text-align:center">Checklists Biology</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/Cellsks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7A Cells, tissues, organs and systems</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'SP1a Vectors and scalars')">SP1a Vectors and scalars</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP1b Distance/time graphs')">SP1b Distance/time graphs</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP1c Acceleration')">SP1c Acceleration</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP1d Velocity/time graphs')">SP1d Velocity/time graphs</button>
+        </div>
+        <div id="SP1a Vectors and scalars" class="tabcontent">
+            <p>Describe the difference between weight and mass.</p>
+<!--            <p><input type="checkbox" name="option1">Describe the difference between weight and mass.</p>-->
+            <p>Explain the difference between a vector and a scalar quantity.</p>
+            <p>Describe the difference between displacement and distance.</p>
+            <p>Describe the difference between velocity and speed.</p>
+            <p>Define the terms: acceleration, force, momentum, energy.</p>
+<!--            <p><input type="checkbox" name="option1">Explain the difference between a vector and a scalar quantity.</p>-->
+<!--            <p><input type="checkbox" name="option1">Describe the difference between displacement and distance.</p>-->
+<!--            <p><input type="checkbox" name="option1">Describe the difference between velocity and speed.</p>-->
+<!--            <p><input type="checkbox" name="option1">Define the terms: acceleration, force, momentum, energy.</p>-->
+        </div>
+
+        <div id="SP1b Distance/time graphs" class="tabcontent">
+            <p>Recall and use equations relating distance, speed and time.</p>
+            <p>Describe how speed can be measured in a school laboratory.</p>
+            <p>Recall typical speeds for walking, running, cycling and travelling by car.</p>
+            <p>Interpret distance/time graphs (including recognising what the steepness of the line tells you).</p>
+            <p>Represent journeys on distance/time graphs.</p>
+            <p>Determine speed from the gradient of a distance/time graph.</p>
+        </div>
+
+        <div id="SP1c Acceleration" class="tabcontent">
+            <p>Recall the formula relating acceleration, velocity and time.</p>
+            <p>Use the formula relating acceleration, velocity and time.</p>
+            <p>Recall the equation relating acceleration, velocity and distance.</p>
+            <p>Use the equation relating acceleration, velocity and distance.</p>
+            <p>Recall the acceleration in free fall.</p>
+            <p>Estimate the magnitudes of some everyday accelerations.</p>
+        </div>
+
+        <div id="SP1d Velocity/time graphs" class="tabcontent">
+            <p>Represent journeys on velocity/time graphs.</p>
+            <p>Interpret velocity/time graphs qualitatively.</p>
+            <p>Calculate uniform accelerations from the gradients of velocity/time graphs.</p>
+            <p>Determine the distance travelled from the area under a velocity/time graph.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/Sexual-reproduction-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7B Sexual reproduction in animals</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'SP2a Resultant force')">SP2a Resultant force</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2b Newton First Law')">SP2b Newton's First Law</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2c Mass and weight')">SP2c Mass and weight</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2d Newton Second Law')">SP2d Newton's Second Law</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2e Newton Third Law')">SP2e Newton's Third Law</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2f Momentum')">SP2f Momentum</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2g Stopping distances')">SP2g Stopping distances</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2h Braking distances and energy')">SP2h Braking distances and energy</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP2i Crash hazards')">SP2i Crash hazards</button>
+        </div>
+        <div id="SP2a Resultant force" class="tabcontent">
+            <p>Explain the difference between scalar and vector quantities.</p>
+            <p>Use arrows to represent the direction and magnitude of forces.</p>
+            <p>Define a resultant force.</p>
+            <p>Calculate resultant forces.</p>
+            <p>Explain whether forces on an object are balanced or unbalanced.</p>
+        </div>
+
+        <div id="SP2b Newton First Law" class="tabcontent">
+            <p>Describe the effect of balanced forces on moving and stationary objects.</p>
+            <p>Describe the effect of a non-zero resultant force on moving and stationary objects.</p>
+            <p>H Describe circular motion at constant speed as a changing velocity and hence as an acceleration.</p>
+            <p>H Describe the force needed to keep an object moving in a circular path.</p>
+            <p>H Give some examples of objects moving in circular paths and the type of centripetal force involved.</p>
+        </div>
+
+        <div id="SP2c Mass and weight" class="tabcontent">
+            <p>Describe the difference between mass and weight.</p>
+            <p>List the factors that determine the weight of an object.</p>
+            <p>Recall the equation for calculating weight.</p>
+            <p>Use the equation relating weight, mass and gravitational field strength.</p>
+            <p>Describe how weight is measured.</p>
+            <p>Describe how the weight of an object is affected by gravitational field strength.</p>
+        </div>
+
+        <div id="SP2d Newton Second Law" class="tabcontent">
+            <p>Describe what an acceleration is.</p>
+            <p>List the factors that affect the acceleration of an object.</p>
+            <p>Recall the equation that relates the factors affecting acceleration.</p>
+            <p>Use the equation relating force, mass and acceleration.</p>
+            <p>Change the subject of the equation relating force, mass and acceleration.</p>
+            <p>H Explain what inertial mass means.</p>
+        </div>
+
+        <div id="SP2e Newton Third Law" class="tabcontent">
+            <p>Describe what Newton's Third Law says.</p>
+            <p>Recall the meaning of equilibrium situation.</p>
+            <p>Identify action–reaction pairs in familiar situations.</p>
+            <p>Distinguish between action–reaction pairs and balanced forces.</p>
+            <p>H Describe how objects affect each other when they collide.</p>
+        </div>
+
+        <div id="SP2f Momentum" class="tabcontent">
+            <p>Describe the factors that affect the momentum of an object.</p>
+            <p>Calculate the momentum of moving objects.</p>
+            <p>Describe examples of momentum in collisions.</p>
+            <p>Use the idea of conservation of momentum to calculate velocities of objects after collisions.</p>
+            <p>Calculate the force needed to produce a change in momentum in a given time.</p>
+        </div>
+
+        <div id="SP2g Stopping distances" class="tabcontent">
+            <p>Describe how human reaction times are measured.</p>
+            <p>Recall typical human reaction times.</p>
+            <p>Describe the link between stopping distance, thinking distance and braking distance.</p>
+            <p>Recall the factors that affect stopping distances.</p>
+            <p>Describe how different factors affect stopping distances.</p>
+        </div>
+
+        <div id="SP2h Braking distances and energy" class="tabcontent">
+            <p>Estimate the braking distance of a road vehicle given its mass, speed and braking force.</p>
+            <p>Explain what work done means.</p>
+            <p>Calculate the work done when a force moves through a distance.</p>
+            <p>Describe the factors that affect the kinetic energy of a moving object.</p>
+            <p>Calculate the kinetic energy of a moving object.</p>
+        </div>
+
+        <div id="SP2i Crash hazards" class="tabcontent">
+            <p>Calculate the force needed to produce a change in momentum in a given time.</p>
+            <p>Explain the meaning of a large deceleration.</p>
+            <p>Describe the dangers caused by large decelerations.</p>
+            <p>Explain why large decelerations cause dangers.</p>
+            <p>H Recall some typical forces involved in road collisions.</p>
+            <p>H Use knowledge of changes in momentum to estimate the forces involved in road collisions.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/what-is-a-muscle-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7C Muscles and bones</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'SP3a Energy stores and transfers')">SP3a Energy stores and transfers</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP3b Energy efficiency')">SP3b Energy efficiency</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP3c Keeping warm')">SP3c Keeping warm</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP3d Stored energies')">SP3d Stored energies</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP3e Non-renewable resources')">SP3e Non-renewable resources</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP3f Renewable resources')">SP3f Renewable resources</button>
+        </div>
+        <div id="SP3a Energy stores and transfers" class="tabcontent">
+            <p>Explain, using examples, that energy is conserved.</p>
+            <p>Give examples of energy being moved between different stores.</p>
+            <p>Interpret diagrams that represent energy transfers.</p>
+            <p>Represent energy transfers using diagrams.</p>
+            <p>Describe what happens to wasted energy in energy transfers.</p>
+        </div>
+        <div id="SP3b Energy efficiency" class="tabcontent">
+            <p>Explain some ways in which energy is transferred wastefully by mechanical processes.</p>
+            <p>Explain some ways of reducing unwanted energy transfers in mechanical processes.</p>
+            <p>Define what efficiency means.</p>
+            <p>H Explain how efficiency can be increased.</p>
+            <p>Recall and use the formula for calculating energy efficiency.</p>
+        </div>
+        <div id="SP3c Keeping warm" class="tabcontent">
+            <p>Describe the ways in which energy can be transferred by heating.</p>
+            <p>Describe ways of reducing unwanted energy transfers using thermal insulation.</p>
+            <p>Explain how different ways of reducing energy transfer by heating work.</p>
+            <p>Define the meaning of thermal conductivity.</p>
+            <p>Describe the effects of the thickness and thermal conductivity of the walls of a building on its rate of cooling.</p>
+        </div>
+        <div id="SP3d Stored energies" class="tabcontent">
+            <p>Describe how different factors affect the gravitational potential energy stored in an object.</p>
+            <p>Recall and use the equation for gravitational potential energy.</p>
+            <p>Describe how different factors affect the kinetic energy stored in an object.</p>
+            <p>Recall and use the equation for kinetic energy.</p>
+        </div>
+        <div id="SP3e Non-renewable resources" class="tabcontent">
+            <p>List the non-renewable energy resources in use today.</p>
+            <p>Describe the advantages and disadvantages of non-renewable energy resources.</p>
+            <p>Compare the advantages and disadvantages of non-renewable energy resources.</p>
+            <p>Explain how the use of non-renewable energy resources is changing.</p>
+        </div>
+        <div id="SP3f Renewable resources" class="tabcontent">
+            <p>List the renewable energy resources in use today.</p>
+            <p>Describe the source of energy for different renewable resources.</p>
+            <p>Describe the ways in which the different energy resources are used.</p>
+            <p>Explain why we cannot use only renewable energy resources.</p>
+            <p>Explain how the use of renewable energy resources is changing.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/ecosystemsks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7D Ecosystems</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'SP4a Describing waves')">SP4a Describing waves</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4b Wave speeds')">SP4b Wave speeds</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4c Refraction')">SP4c Refraction</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4d Waves crossing boundaries')">SP4d Waves crossing boundaries</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4e Ears and hearing')">SP4e Ears and hearing</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4f Ultrasound')">SP4f Ultrasound</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP4g Infrasound')">SP4g Infrasound</button>
+        </div>
+        <div id="SP4a Describing waves" class="tabcontent">
+            <p>Recall that waves transfer energy and information but do not transfer matter.</p>
+            <p>Describe waves using the terms frequency, wavelength, amplitude, period and velocity.</p>
+            <p>Describe the differences between longitudinal and transverse waves.</p>
+            <p>Give examples of transverse and longitudinal waves.</p>
+        </div>
+
+        <div id="SP4b Wave speeds" class="tabcontent">
+            <p>Recall the equation relating wave speed, frequency and wavelength.</p>
+            <p>Use the equation relating wave speed, frequency and wavelength.</p>
+            <p>Recall the equation relating wave speed, distance and time.</p>
+            <p>Use the equation relating wave speed, distance and time.</p>
+            <p>Describe how to measure the velocity of sound in air.</p>
+            <p>Describe how to measure the velocity of waves on the surface of water.</p>
+        </div>
+
+        <div id="SP4c Refraction" class="tabcontent">
+            <p>Describe what refraction is.</p>
+            <p>Describe how the direction of a wave changes when it goes from one material to another.</p>
+            <p>Explain some effects of the refraction of light (explanations in terms of changing speeds are
+                not expected).
+            </p>
+            <p>H Explain how a change in wave speed can cause a change in direction.</p>
+        </div>
+
+        <div id="SP4d Waves crossing boundaries" class="tabcontent">
+            <p>Describe some effects of waves being reflected.</p>
+            <p>Describe some effects of waves being refracted.</p>
+            <p>Describe some effects of waves being transmitted and absorbed.</p>
+            <p>Describe how changes in velocity, frequency and wavelength are related when sound waves go from one medium to another.</p>
+        </div>
+
+        <div id="SP4e Ears and hearing" class="tabcontent">
+            <p>H List the parts of the human ear, in the order in which they transmit vibrations.</p>
+            <p>H Describe the functions of the parts of the ear.</p>
+            <p>H Describe how sound waves in air are converted to vibrations in solids.</p>
+            <p>H Describe some factors that affect how well sound waves transfer energy to solids.</p>
+            <p>H Explain why the human ear can only detect a certain range of frequencies.</p>
+        </div>
+
+        <div id="SP4f Ultrasound" class="tabcontent">
+            <p>H Calculate the depth of water from information about time and wave velocity.</p>
+            <p>H Recall that sound with frequencies greater than 20 000 Hz is called ultrasound.</p>
+            <p>H Explain how ultrasound is used in sonar.</p>
+            <p>H Describe uses of ultrasound in body scanning.</p>
+            <p>H Explain how ultrasound is used in foetal scanning.</p>
+        </div>
+
+        <div id="SP4g Infrasound" class="tabcontent">
+            <p>H Recall that sound with frequencies less than 20 Hz is called infrasound.</p>
+            <p>H Describe some uses of infrasound.</p>
+            <p>H Recall that some seismic waves are infrasound waves.</p>
+            <p>H Describe P waves and S waves and the substances through which they can travel.</p>
+            <p>H Explain how seismic waves can help us to investigate the Earth s core.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/plants-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>8B Plants and their reproduction</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'SP5a Ray diagrams')">SP5a Ray diagrams</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5b Colour')">SP5b Colour</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5c Lenses')">SP5c Lenses</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5d Electromagnetic waves')">SP5d Electromagnetic waves</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5e The electromagnetic spectrum')">SP5e The electromagnetic spectrum</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5f Using the long wavelengths')">SP5f Using the long wavelengths</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5g Radiation and temperature')">SP5g Radiation and temperature</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5h Using the short wavelengths')">SP5h Using the short wavelengths</button>
+            <button class="tablinks" onmouseover="openCity(event, 'SP5i EM radiation dangers')">SP5i EM radiation dangers</button>
+        </div>
+        <div id="SP5a Ray diagrams" class="tabcontent">
+            <p>Recall the law of reflection.</p>
+            <p>Draw ray diagrams to show how a mirror forms images.</p>
+            <p>Draw ray diagrams to show what happens when light is refracted.</p>
+            <p>Describe what total internal reflection is and when it happens.</p>
+            <p>Explain the significance of the critical angle in total internal reflection.</p>
+        </div>
+        <div id="SP5b Colour" class="tabcontent">
+            <p>Explain the difference between specular and diffuse reflection.</p>
+            <p>Recall that white light is a mixture of different colours of light.</p>
+            <p>Explain why surfaces appear to have different colours in terms of differential absorption.</p>
+            <p>Explain how filters make coloured light in terms of absorption and transmission.</p>
+            <p>Explain the effect of viewing coloured objects in different colours of light.</p>
+        </div>
+        <div id="SP5c Lenses" class="tabcontent">
+            <p>Define the power of a lens (in terms of a more powerful lens bending light through a greater angle, the formula relating power to focal length is not required).</p>
+            <p>Describe how the focal length and shape of a lens affect its power.</p>
+            <p>Use ray diagrams to show how converging and diverging lenses refract light.</p>
+            <p>Compare and contrast the way in which converging and diverging lenses refract light.</p>
+            <p>Explain how diverging lenses produce virtual images.</p>
+            <p>Explain the different types of image that can be formed by converging lenses.</p>
+        </div>
+        <div id="SP5d Electromagnetic waves" class="tabcontent">
+            <p>Recall examples of electromagnetic waves.</p>
+            <p>Describe the common features of electromagnetic waves.</p>
+            <p>Describe the transfer of energy by electromagnetic waves.</p>
+            <p>Describe the range of electromagnetic waves that our eyes can detect.</p>
+            <p>H Describe an effect caused by the different velocities of electromagnetic waves in different substances.</p>
+        </div>
+        <div id="SP5e The electromagnetic spectrum" class="tabcontent">
+            <p>Recall the groups of waves in the electromagnetic spectrum in order.</p>
+            <p>Recall the colours of the visible spectrum in order.</p>
+            <p>Describe how the waves in the electromagnetic spectrum are grouped.</p>
+            <p>H Describe some differences in the ways that different parts of the electromagnetic spectrum are absorbed and transmitted.</p>
+            <p>H Describe some differences in the ways that different parts of the electromagnetic spectrum are refracted and reflected.</p>
+        </div>
+        <div id="SP5f Using the long wavelengths" class="tabcontent">
+            <p>H Describe how long wavelength electromagnetic waves are affected by different substances. </p>
+            <p>H Explain the effects caused by long wavelength electromagnetic waves travelling at different velocities in different substances.</p>
+            <p>Describe some uses of radio waves.</p>
+            <p>Describe some uses of microwaves.</p>
+            <p>Describe some uses of infrared.</p>
+            <p>Describe some uses of visible light.</p>
+            <p>H Describe how radio waves are produced and detected by electrical circuits.</p>
+        </div>
+        <div id="SP5g Radiation and temperature" class="tabcontent">
+            <p>Describe how the intensity and wavelength of emitted radiation depends on the temperature of the body.</p>
+            <p>H Explain that the power radiated and absorbed must be the same to maintain a body at a constant temperature.</p>
+            <p>H Explain what happens to the temperature of a body when the average power radiated is not balanced by the average power absorbed.</p>
+            <p>H Describe the factors that affect the energy absorbed and radiated by the Earth.</p>
+            <p>H Explain how these factors affect the temperature of the Earth.</p>
+        </div>
+        <div id="SP5h Using the short wavelengths" class="tabcontent">
+            <p>H Describe how short wavelength electromagnetic waves are affected by different substances.</p>
+            <p>H Explain the effects caused by short wavelength electromagnetic waves travelling at different velocities in different substances.</p>
+            <p>Describe some uses of ultraviolet radiation.</p>
+            <p>Describe some uses of X-rays.</p>
+            <p>Describe some uses of gamma rays.</p>
+        </div>
+        <div id="SP5i EM radiation dangers" class="tabcontent">
+            <p>Describe how the potential danger of electromagnetic radiation depends on its frequency.</p>
+            <p>Describe the harmful effects of microwave and infrared radiation.</p>
+            <p>Describe the harmful effects of ultraviolet radiation, X-rays and gamma rays.</p>
+            <p>Recall the nature of radiation produced by changes in atoms and their nuclei.</p>
+            <p>Recall that absorption of radiation can cause changes in atoms and their nuclei.</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="images/Cellsks3.png" style="width:100%" onclick="currentSlide(1)" alt="Cells, tissues, organs and systems">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/Sexual-reproduction-ks3.png" style="width:100%" onclick="currentSlide(2)" alt="Sexual reproduction in animals">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/what-is-a-muscle-ks3.png" style="width:100%" onclick="currentSlide(3)" alt="Muscles and bones">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/ecosystemsks3.png" style="width:100%" onclick="currentSlide(4)" alt="Ecosystems">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/plants-ks3.png" style="width:100%" onclick="currentSlide(5)" alt="Plants and their reproduction">
+        </div>
+
+    </div>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
+
