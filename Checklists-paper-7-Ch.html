@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="stylechecklists-paper-1.css">-->
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    img{
+       width: 100%;
+       height: 25vh;
+       object-fit: cover;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Five columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #e5e5e5;
+          width: 30%;
+          height: auto;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #a69cac;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border-top: 1px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 100%;
+          display: none;
+        }
+
+        /* Clear floats after the tab */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+</style>
+<body>
+
+<h2 style="text-align:center">Checklists Chemistry</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/ratesofreaction.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7E Mixtures and separation</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '7Ea Mixtures')">7Ea Mixtures</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Eb Solutions')">7Eb Solutions</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ec Working scientifically')">7Ec Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ec Evaporation')">7Ec Evaporation</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ed Chromatography')">7Ed Chromatography</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ee Distillation')">7Ee Distillation</button>
+        </div>
+        <div id="7Ea Mixtures" class="tabcontent">
+            <p>State the meaning of sieving and filtering.</p>
+            <p>Describe and identify mixtures.</p>
+            <p>Describe how insoluble solids can be separated from a liquid.</p>
+            <p>Classify mixtures.</p>
+        </div>
+
+        <div id="7Eb Solutions" class="tabcontent">
+            <p>Describe what is seen when a solid dissolves.</p>
+            <p>State the meaning of soluble, solution, solvent and solute.</p>
+            <p>Describe how some solids can be used to form a solution and what is meant by a saturated solution.</p>
+            <p>Identify the solute and solvent in a solution.</p>
+            <p>State the meaning of solubility.</p>
+            <p>Describe how temperature can affect solubility.</p>
+        </div>
+
+        <div id="7Ec Working scientifically" class="tabcontent">
+            <p>Identify hazards and risks.</p>
+            <p>Justify methods of risk reduction.</p>
+            <p>Plan appropriate safety precautions in experiments.</p>
+        </div>
+
+        <div id="7Ec Evaporation" class="tabcontent">
+            <p>Describe how soluble solids can be separated from a solution.</p>
+            <p>Describe the difference between evaporation and boiling.</p>
+        </div>
+
+        <div id="7Ed Chromatography" class="tabcontent">
+            <p>Describe how chromatography can be used to separate mixtures.</p>
+            <p>Explain how chromatography works.</p>
+        </div>
+
+        <div id="7Ee Distillation" class="tabcontent">
+            <p>Describe how distillation can be used to separate mixtures.</p>
+            <p>State examples of where distillation is used.</p>
+            <p>Explain how distillation works.</p>
+            <p>Use a knowledge of separation techniques to decide how a mixture should be separated.</p>
+            <p>Justify a decision to separate a mixture in a certain way.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/acids.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7F Acids and alkalis</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '7Fa Hazards')">7Fa Hazards</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Fa Working scientifically')">7Fa Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Fb Indicators')">7Fb Indicators</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Fc Acidity and alkalinity')">7Fc Acidity and alkalinity</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Fd Neutralisation')">7Fd Neutralisation</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Fe Neutralisation in daily life')">7Fe Neutralisation in daily life</button>
+        </div>
+
+        <div id="7Fa Hazards" class="tabcontent">
+            <p>Name something that is an acid.</p>
+            <p>Name something that is an alkali.</p>
+            <p>Recall why some chemicals have hazard symbols.</p>
+            <p>Recognise the common hazards and hazard symbols.</p>
+            <p>Explain why hazard symbols are necessary.</p>
+        </div>
+
+        <div id="7Fa Working scientifically" class="tabcontent">
+            <p>Recall the names of at least two everyday acids and alkalis.</p>
+            <p>Describe how risks from some hazards can be reduced.</p>
+            <p>Plan a safe investigation.</p>
+            <p>Explain the safety precautions that need to be taken when carrying out an investigation.</p>
+        </div>
+
+        <div id="7Fb Indicators" class="tabcontent">
+            <p>Describe how indicators can be used to identify acids and alkalis.
+                Identify acids, alkalis and neutral solutions using litmus.
+                Explain why litmus is purple in neutral solutions.
+
+        </div>
+
+        <div id="7Fc Acidity and alkalinity" class="tabcontent">
+            <p>Identify acids, alkalis and neutral solutions using universal indicator.</p>
+            <p>Describe the pH scale.</p>
+            <p>Describe how to measure the pH of a solution.</p>
+        </div>
+
+        <div id="7Fd Neutralisation" class="tabcontent">
+            <p>Recall the name of the reaction that occurs between acids and alkalis.</p>
+            <p>Explain the difference between a physical and a chemical change.</p>
+            <p>Identify the reactants and products in a word equation.</p>
+            <p>Write a word equation for a reaction.</p>
+            <p>Recall the names of the salts produced by hydrochloric, sulfuric and nitric acids.</p>
+            <p>Describe how to produce a pure solution of a salt from an acid and a base or an alkali.</p>
+        </div>
+
+        <div id="7Fe Neutralisation in daily life" class="tabcontent">
+            <p>Recall some uses of neutralisation.</p>
+            <p>Recall the meaning of the term base.</p>
+            <p>Explain some uses of neutralisation.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/particle-model-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7G The particle model</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '7Ga Solids, liquids and gases')">7Ga Solids, liquids and gases</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Gb Working scientifically')">7Gb Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Gb Particles')">7Gb Particles</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Gc Brownian motion')">7Gc Brownian motion</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Gd Diffusion')">7Gd Diffusion</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ge Air pressure')">7Ge Air pressure</button>
+        </div>
+
+        <div id="7Ga Solids, liquids and gases" class="tabcontent">
+            <p>Recall some properties of materials.</p>
+            <p>Classify materials as solid, liquid or gas.</p>
+            <p>Describe the properties of the three states of matter.</p>
+            <p>Recognise that solids, liquids and gases need to be handled in different ways because of their different properties.</p>
+        </div>
+
+        <div id="7Gb Working scientifically" class="tabcontent">
+            <p>Identify and explain what a scientific question, hypothesis, theory, prediction and observation are.</p>
+            <p>Make a prediction that is explained using scientific knowledge.</p>
+            <p>Describe how evidence and observations are used to develop a hypothesis into a theory.</p>
+            <p>Explain how evidence and observations support or do not support a certain theory.</p>
+        </div>
+
+        <div id="7Gb Particles" class="tabcontent">
+            <p>Recall that all materials are made out of tiny particles.</p>
+            <p>Identify solids, liquids and gases from descriptions and particle diagrams.</p>
+            <p>Use particle theory to explain the basic properties of solids, liquids and gases.</p>
+            <p>Suggest explanations for observations using particle theory.</p>
+            <p>Draw particle diagrams to describe solids, liquids and gases.</p>
+        </div>
+
+        <div id="7Gc Brownian motion" class="tabcontent">
+            <p>Describe Brownian motion.</p>
+            <p>State where Brownian motion can be observed.</p>
+            <p>Use particle theory to explain how Brownian motion occurs.</p>
+        </div>
+
+        <div id="7Gd Diffusion" class="tabcontent">
+            <p>State what is meant by diffusion.</p>
+            <p>Recall some everyday examples of diffusion.</p>
+            <p>Use particle theory to explain how diffusion occurs.</p>
+        </div>
+
+        <div id="7Ge Air pressure" class="tabcontent">
+            <p>State what is meant by gas pressure.</p>
+            <p>Recognise some effects of gas pressure.</p>
+            <p>Use particle theory to explain gas pressure.</p>
+            <p>Describe how gas pressure can be changed.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/particles-elements-compounds.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>7H Atoms, elements and compounds</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '7Ha Working scientifically')">7Ha Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Ha The air we breathe')">7Ha The air we breathe</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Hb Earth s elements')">7Hb Earth s elements</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Hc Metals and non-metals')">7Hc Metals and non-metals</button>
+            <button class="tablinks" onmouseover="openCity(event, '7Hd Making compounds')">7Hd Making compounds</button>
+            <button class="tablinks" onmouseover="openCity(event, '7He Chemical reactions')">7He Chemical reactions</button>
+        </div>
+
+        <div id="7Ha Working scientifically" class="tabcontent">
+            <p>Identify and draw tables, pie charts, bar charts and scatter graphs.</p>
+            <p>Interpret tables, pie charts, bar charts and scatter graphs.</p>
+            <p>Identify the difference between qualitative and quantitative data.</p>
+            <p>Describe the benefits of organising data in particular ways.</p>
+        </div>
+
+        <div id="7Ha The air we breathe" class="tabcontent">
+            <p>State what is meant by an element and recall some examples.</p>
+            <p>Describe the difference between elements and compounds by their properties.</p>
+            <p>Use particle diagrams to describe the difference between atoms and molecules.</p>
+            <p>State the proportions of different gases in the air.</p>
+            <p>Use particle diagrams to describe the difference between elements, compounds and mixtures.</p>
+            <p>Use diagrams to explain the difference between a mixture of elements and a compound.</p>
+        </div>
+
+        <div id="7Hb Earth s elements" class="tabcontent">
+            <p>Describe the properties of two elements and link them to their uses.</p>
+            <p>Represent elements using chemical symbols.</p>
+            <p>Explain why some elements are found in their native states and have been known about for a long time.</p>
+            <p>Describe two advantages of recycling materials.</p>
+        </div>
+
+        <div id="7Hc Metals and non-metals" class="tabcontent">
+            <p>Identify different metal and non-metal elements.</p>
+            <p>Use evidence to classify a material as a metal or non-metal.</p>
+        </div>
+
+        <div id="7Hd Making compounds" class="tabcontent">
+            <p>State what happens in all chemical reactions.</p>
+            <p>Describe how elements can be changed into compounds.</p>
+            <p>Describe how a compound and its elements properties are different.</p>
+            <p>Use the chemical names for different 2- and 3-element compounds.</p>
+        </div>
+
+        <div id="7He Chemical reactions" class="tabcontent">
+            <p>Recall examples of chemical reactions in everyday life.</p>
+            <p>Write word equations to describe chemical reactions and identify the products and reactants in the reactions.</p>
+            <p>Identify and describe what happens in thermal decomposition reactions.</p>
+            <P>Explain the different ways energy can play a part in some reactions.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/rocks-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>8H Rocks</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '8Ha Rocks and their uses')">8Ha Rocks and their uses</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Hb Igneous and metamorphic')">8Hb Igneous and metamorphic</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Hc Weathering and erosion')">8Hc Weathering and erosion</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Hd Sedimentary rocks')">8Hd Sedimentary rocks</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Hd Working scientifically')">8Hd Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '8He Materials in the Earth')">8He Materials in the Earth</button>
+        </div>
+
+        <div id="8Ha Rocks and their uses" class="tabcontent">
+            <p>Recall some uses for rocks.</p>
+            <p>State what minerals are.</p>
+            <p>Describe the textures of some rocks.</p>
+            <p>Explain why some rocks are porous.</p>
+            <p>Relate features of a landscape to the wearing away of different rocks.</p>
+        </div>
+
+        <div id="8Hb Igneous and metamorphic" class="tabcontent">
+            <p>Name some igneous rocks and describe how igneous rocks are formed.</p>
+            <p>Explain how the crystal size in igneous rocks depends on cooling rate.</p>
+            <p>Explain where you might find igneous rocks with small or large crystals.</p>
+            <p>Name some metamorphic rocks and describe how metamorphic rocks are formed.</p>
+            <p>Describe the textures and properties of igneous and metamorphic rocks.</p>
+        </div>
+
+        <div id="8Hc Weathering and erosion" class="tabcontent">
+            <p>Explain how the three types of weathering break up rocks.</p>
+            <p>Recall how weathered rocks are eroded and abraded.</p>
+            <p>Explain why different rock fragment sizes are carried by water and wind.</p>
+        </div>
+
+        <div id="8Hd Sedimentary rocks" class="tabcontent">
+            <p>Describe the textures and properties of sedimentary rocks.</p>
+            <p>Name some sedimentary rocks and describe how sedimentary rocks and fossils are formed.</p>
+            <p>Use the rock cycle model to link the formation of different types of rock.</p>
+        </div>
+
+        <div id="8Hd Working scientifically" class="tabcontent">
+            <p>Describe how the scientific method is used for sciences such as geology.</p>
+        </div>
+
+        <div id="8He Materials in the Earth" class="tabcontent">
+            <p>Recall that some metals are found in their native states.</p>
+            <p>Recall how metals are extracted from ores taken from the Earth s crust.</p>
+            <p>Explain the advantages of recycling metals.</p>
+            <p>Describe some of the environmental effects of mining.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="images/ratesofreaction.png" style="width:100%" onclick="currentSlide(1)" alt="Mixtures and separation">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/acids.png" style="width:100%" onclick="currentSlide(2)" alt="Acids and alkalis">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/particle-model-ks3.png" style="width:100%" onclick="currentSlide(3)" alt="The particle model">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/particles-elements-compounds.png" style="width:100%" onclick="currentSlide(4)" alt="Atoms, elements and compounds">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/rocks-ks3.png" style="width:100%" onclick="currentSlide(5)" alt="Rocks">
+        </div>
+
+    </div>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
+
