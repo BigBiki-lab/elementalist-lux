@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="stylechecklists-paper-1.css">-->
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    img{
+       width: 100%;
+       height: 25vh;
+       object-fit: cover;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Five columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #e5e5e5;
+          width: 30%;
+          height: auto;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #a69cac;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border-top: 1px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 100%;
+          display: none;
+        }
+
+        /* Clear floats after the tab */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+</style>
+<body>
+
+<h2 style="text-align:center">Checklists Biology</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/food-and-nutrition.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>8A Food and nutrition</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '8Aa Nutrients')">8Aa Nutrients</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ab Uses of nutrients')">8Ab Uses of nutrients</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ac Balanced diets')">8Ac Balanced diets</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ad Digestion')">8Ad Digestion</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ae Absorption')">8Ae Absorption</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ae Working scientifically')">8Ae Working scientifically</button>
+        </div>
+        <div id="8Aa Nutrients" class="tabcontent">
+            <p>Recall why we need food.</p>
+            <p>Recall the nutrients we need in our diets.</p>
+            <p>Describe why our bodies need fibre and water.</p>
+            <p>Interpret food information labels.</p>
+            <p>Recall the tests used to detect some nutrients.</p>
+        </div>
+
+        <div id="8Ab Uses of nutrients" class="tabcontent">
+            <p>Recall some good sources of the different nutrients and fibre.</p>
+            <p>Describe how factors change the amount of energy we need from food.</p>
+            <p>Describe what our bodies use the different nutrients for.</p>
+        </div>
+
+        <div id="8Ac Balanced diets" class="tabcontent">
+            <p>Describe the benefits of a balanced diet.</p>
+            <p>Explain how different types of malnutrition are caused and their effects.</p>
+            <p>Interpret Reference Intake (RI) information.</p>
+        </div>
+
+        <div id="8Ad Digestion" class="tabcontent">
+            <p>Identify and recall the main organs in the human digestive system.</p>
+            <p>Describe the functions of the organs in the digestive system.</p>
+            <p>Explain how food is moved through the digestive system.</p>
+            <p>Describe how enzymes work as catalysts in digestion.</p>
+            <p>Recall some benefits and drawbacks of bacteria in the digestive system.</p>
+        </div>
+
+        <div id="8Ae Absorption" class="tabcontent">
+            <p>Recall what happens in respiration.</p>
+            <p>Explain how diffusion occurs in terms of movement of particles.</p>
+            <p>Explain how diffusion allows absorption by the small intestine.</p>
+            <p>Explain how the small intestine is adapted to its function.</p>
+        </div>
+
+        <div id="8Ae Working scientifically" class="tabcontent">
+            <p>Calculate surface areas of rectangles and cuboids.</p>
+            <p>Explain the importance of surface area in science (e.g. in absorption).</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/breathing-respiration.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>8C Breathing and respiration</h2>
+        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '8Ca Aerobic respiration')">8Ca Aerobic respiration</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Cb Gas exchange system')">8Cb Gas exchange system</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Cc Working scientifically')">8Cc Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Cc Getting oxygen')">8Cc Getting oxygen</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Cd Comparing gas exchange')">8Cd Comparing gas exchange</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Ce Anaerobic respiration')">8Ce Anaerobic respiration</button>
+        </div>
+
+        <div id="8Ca Aerobic respiration" class="tabcontent">
+            <p>Recall what happens in aerobic respiration.</p>
+            <p>Model aerobic respiration using a word equation.</p>
+            <p>Compare burning (combustion) and aerobic respiration.</p>
+        </div>
+
+        <div id="8Cb Gas exchange system" class="tabcontent">
+            <p>Recall the functions of the organs in the gas exchange system.</p>
+            <p>Explain how the structure of the lungs allows efficient gas exchange.</p>
+            <p>Describe how muscles cause breathing, and how this causes pressure differences that allow ventilation.</p>
+            <p>Explain how the lungs are adapted for efficient gas exchange.</p>
+            <p>Explain how specialised cells keep the lungs clean.</p>
+        </div>
+
+        <div id="8Cc Working scientifically" class="tabcontent">
+            <p>Calculate ranges and explain their use.</p>
+            <p>Calculate means and explain their use.</p>
+        </div>
+
+        <div id="8Cc Getting oxygen" class="tabcontent">
+            <p>Describe ways that oxygen supply to tissues can be reduced, and the effect of this.</p>
+            <p>Describe the effects of smoking tobacco.</p>
+            <p>Describe the transfer of substances between blood and tissues.</p>
+            <p>Explain the changes in pulse and breathing rate during exercise.</p>
+        </div>
+
+        <div id="8Cd Comparing gas exchange" class="tabcontent">
+            <p>Recall how to detect aerobic respiration.</p>
+            <p>Describe how gas exchange occurs in different organisms including plants.</p>
+            <p>Compare the human gaseous exchange system with those of other animals.</p>
+        </div>
+
+        <div id="8Ce Anaerobic respiration" class="tabcontent">
+            <p>Recall what happens in anaerobic respiration in humans.</p>
+            <p>Explain when aerobic respiration and anaerobic respiration occur.</p>
+            <p>Describe how lactic acid is removed from tissues.</p>
+            <p>Explain the cause of excess post-exercise oxygen consumption (EPOC).</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/unicellular-organism.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>8D Unicellular organisms</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '8Da Unicellular or multicellular')">8Da Unicellular or multicellular</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Db Microscopic fungi')">8Db Microscopic fungi</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Dc Bacteria')">8Dc Bacteria</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Dc Working scientifically')">8Dc Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '8Dd Protoctists')">8Dd Protoctists</button>
+            <button class="tablinks" onmouseover="openCity(event, '8De Decomposers and carbon')">8De Decomposers and carbon</button>
+        </div>
+
+        <div id="8Da Unicellular or multicellular" class="tabcontent">
+            <p>Recall the five kingdoms of organisms.</p>
+            <p>Explain why multicellular organisms need efficient transport systems.</p>
+            <p>Explain how materials enter and leave unicellular organisms.</p>
+            <p>Use the characteristics of microorganisms to classify them into kingdoms.</p>
+        </div>
+
+        <div id="8Db Microscopic fungi" class="tabcontent">
+            <p>Recall the conditions under which yeast grow quickly.</p>
+            <p>Recall what happens in aerobic and anaerobic respiration in yeast.</p>
+            <p>Explain how yeast can be used to make both alcoholic drinks and bread.</p>
+            <p>Describe how yeast reproduce asexually by budding.</p>
+            <p>Explain what is happening in the different parts of a growth curve.</p>
+        </div>
+
+        <div id="8Dc Bacteria" class="tabcontent">
+            <p>Recall the conditions under which bacteria grow quickly.</p>
+            <p>Explain why bacteria are used to make yoghurt.</p>
+            <p>Describe, identify and state the basic functions of the parts of a bacterial cell (soft cell wall, flagella, cytoplasm, cell membrane, chromosome).</p>
+            <p>Describe how bacteria reproduce asexually by binary fission.</p>
+            <p>Explain why bacteria grow well in certain conditions.</p>
+        </div>
+
+        <div id="8Dc Working scientifically" class="tabcontent">
+            <p>Extract simple information from pie charts.</p>
+            <p>Present data in pie charts.</p>
+            <p>Identify when to use a pie chart.</p>
+        </div>
+
+        <div id="8Dd Protoctists" class="tabcontent">
+            <p>Recall the conditions under which algae grow quickly.</p>
+            <p>Describe, identify and state the basic functions of common parts of protoctist cells (cell wall, flagella, cilia, pseudopods, cytoplasm, cell surface membrane, mitochondria, chloroplasts, nucleus).</p>
+            <p>Explain the functions of light and chlorophyll in photosynthesis.</p>
+        </div>
+
+        <div id="8De Decomposers and carbon" class="tabcontent">
+            <p>Give examples of decomposer microorganisms.</p>
+            <p>State the names of compounds in which carbon is held in an ecosystem.</p>
+            <p>Explain the importance of decomposers in an ecosystem.</p>
+            <p>Model the recycling of carbon in an ecosystem using the carbon cycle.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/genetics.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>9A Genetics and evolution</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '9Aa Environmental variation')">9Aa Environmental variation</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Ab Inherited variation')">9Ab Inherited variation</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Ab Working scientifically')">9Ab Working scientifically</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Ac DNA')">9Ac DNA</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Ad Genes and extinction')">9Ad Genes and extinction</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Ae Natural selection')">9Ae Natural selection</button>
+        </div>
+
+        <div id="9Aa Environmental variation" class="tabcontent">
+            <p>Identify and give examples of environmental variation.</p>
+            <p>Explain how environmental variation is caused.</p>
+            <p>Tell the difference between continuous and discontinuous variation.</p>
+            <p>Explain why environmental variation can make classification and identification difficult.</p>
+        </div>
+
+        <div id="9Ab Inherited variation" class="tabcontent">
+            <p>Identify and give examples of inherited variation.</p>
+            <p>Explain how inherited variation is caused.</p>
+            <p>Describe where genetic information is stored and what it does.</p>
+            <p>Identify normal distribution.</p>
+        </div>
+
+        <div id="9Ab Working scientifically" class="tabcontent">
+            <p>Describe what probability is.</p>
+            <p>Calculate probabilities from experimental data.</p>
+            <p>Express probabilities as percentages, decimals and fractions.</p>
+        </div>
+
+        <div id="9Ac DNA" class="tabcontent">
+            <p>State what chromosomes are made of.</p>
+            <p>State the number of pairs of chromosomes in most human cells.</p>
+            <p>Describe where genes are found and what they do.</p>
+            <p>Describe the roles played by Watson, Crick, Franklin and Wilkins in the discovery of the structure of DNA.</p>
+            <p>Use a model to illustrate the relationship between cells, cell nuclei, DNA, chromosomes, genetic information and genes.</p>
+        </div>
+
+        <div id="9Ad Genes and extinction" class="tabcontent">
+            <p>Explain how changes in an ecosystem can cause endangerment and extinction.</p>
+            <p>Suggest methods of conservation.</p>
+            <p>Explain how particular adaptations affect the chances of survival in a habitat.</p>
+            <p>Explain why preserving biodiversity is important and the role of gene banks.</p>
+        </div>
+
+        <div id="9Ae Natural selection" class="tabcontent">
+            <p>Explain how natural selection determines the survival of certain variations of adaptations within a population.</p>
+            <p>Explain how natural selection can lead to evolution.</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/plant-growth.png" style="width:100%; height:50vh; object-fit:cover;">
+        <h2>9B Plant growth</h2>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '9Ba Reactions in plants')">9Ba Reactions in plants</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Bb Plant adaptations')">9Bb Plant adaptations</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Bc Plant products')">9Bc Plant products</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Bd Growing crops')">9Bd Growing crops</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Be Farming problems')">9Be Farming problems</button>
+            <button class="tablinks" onmouseover="openCity(event, '9Be Working scientifically')">9Be Working scientifically</button>
+        </div>
+
+        <div id="9Ba Reactions in plants" class="tabcontent">
+            <p>Model aerobic respiration using a word equation.</p>
+            <p>Model photosynthesis using a word equation.</p>
+            <p>Explain how the rate of photosynthesis can be controlled by limiting factors.</p>
+        </div>
+
+        <div id="9Bb Plant adaptations" class="tabcontent">
+            <p>Describe how gas exchange (including water) occurs in plants.</p>
+            <p>Describe how leaves (and their cells) are adapted for photosynthesis.</p>
+            <p>Describe how roots and stems (and their cells) are adapted for water absorption and transport.</p>
+        </div>
+
+        <div id="9Bc Plant products" class="tabcontent">
+            <p>Explain where starch is found in a plant and how to detect it.</p>
+            <p>Describe how a range of different substances are made by plants.</p>
+            <p>Describe the uses of some different substances made by plants.</p>
+        </div>
+
+        <div id="9Bd Growing crops" class="tabcontent">
+            <p>Describe how and why plants are cross-bred.</p>
+            <p>Describe how and why plants are selectively bred.</p>
+            <p>Recall the main mineral salts required by plants.</p>
+            <p>Explain how farmers try to increase the yields of their crops.</p>
+        </div>
+
+        <div id="9Be Farming problems" class="tabcontent">
+            <p>Use food webs to predict the effects of changes in the numbers of organisms in an ecosystem.</p>
+            <p>Model the recycling of carbon in an ecosystem using the carbon cycle.</p>
+            <p>Explain some of the problems caused by modern farming methods.</p>
+        </div>
+
+        <div id="9Be Working scientifically" class="tabcontent">
+            <p>Identify and explain some different reasons for bias.</p>
+            <p>Explain how something is valid (or not valid).</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="images/food-and-nutrition.png" style="width:100%" onclick="currentSlide(1)" alt="Food and nutrition">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/breathing-respiration.png" style="width:100%" onclick="currentSlide(2)" alt="Breathing and respiration">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/unicellular-organism.png" style="width:100%" onclick="currentSlide(3)" alt="Unicellular organisms">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/genetics.png" style="width:100%" onclick="currentSlide(4)" alt="Genetics and evolution">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/plant-growth.png" style="width:100%" onclick="currentSlide(5)" alt="Plant growth">
+        </div>
+
+    </div>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
+
