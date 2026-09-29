@@ -1,168 +1,30 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="stylechecklists-paper-1.css">-->
-<style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-    img{
-       width: 100%;
-       height: 25vh;
-       object-fit: cover;
-    }
-    * {
-      box-sizing: border-box;
-    }
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5YPNJ85GL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    img {
-      vertical-align: middle;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Five columns side by side */
-    .column {
-      float: left;
-      width: 20%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-
-    * {box-sizing: border-box}
-        body {font-family: "Lato", sans-serif;}
-
-        /* Style the tab */
-        .tab {
-          float: left;
-          border: 1px solid #ccc;
-          background-color: #e5e5e5;
-          width: 30%;
-          height: auto;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-          display: block;
-          background-color: inherit;
-          color: black;
-          padding: 22px 16px;
-          width: 100%;
-          border: none;
-          outline: none;
-          text-align: left;
-          cursor: pointer;
-          font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-          background-color: #ddd;
-        }
-
-        /* Create an active/current "tab button" class */
-        .tab button.active {
-          background-color: #a69cac;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-          float: left;
-          padding: 0px 12px;
-          border-top: 1px solid #ccc;
-          width: 70%;
-          border-left: none;
-          height: 100%;
-          display: none;
-        }
-
-        /* Clear floats after the tab */
-        .clearfix::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-
-</style>
+        gtag('config', 'G-D5YPNJ85GL');
+    </script>
+    <title>Checklist paper 7 Biology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style-Checklists-paper-7-Bi.css">
+</head>
 <body>
 
-<h2 style="text-align:center">Checklists Biology</h2>
+<h2 style="text-align:center">Checklist Biology</h2>
 
 <div class="container">
+
+    <div class="overall-progress">
+        <span>Overall Progress: </span>
+        <strong id="overallPercentage">0%</strong>
+    </div>
+
     <div class="mySlides">
         <div class="numbertext">1 / 5</div>
         <img src="images/Cellsks3.png" style="width:100%; height:50vh; object-fit:cover;">
@@ -177,51 +39,119 @@
             <button class="tablinks" onmouseover="openCity(event, '7Ae Organ systems')">7Ae Organ systems</button>
         </div>
         <div id="7Aa Life processes" class="tabcontent">
-            <p>Identify things as being alive or not.</p>
-<!--            <p><input type="checkbox" name="option1">Describe the difference between weight and mass.</p>-->
-            <p>Describe the life processes.</p>
-            <p>Use life processes to justify whether something is an organism or is non-living.</p>
-<!--            <p><input type="checkbox" name="option1">Explain the difference between a vector and a scalar quantity.</p>-->
-<!--            <p><input type="checkbox" name="option1">Describe the difference between displacement and distance.</p>-->
-<!--            <p><input type="checkbox" name="option1">Describe the difference between velocity and speed.</p>-->
-<!--            <p><input type="checkbox" name="option1">Define the terms: acceleration, force, momentum, energy.</p>-->
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item501" />
+                    <span>Identify things as being alive or not.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item502" />
+                    <span>Describe the life processes.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item503" />
+                    <span>Use life processes to justify whether something is an organism or is non-living.</span></p>
+            </label>
+
         </div>
 
         <div id="7Ab Organs" class="tabcontent">
-            <p>Recall that the heart is an example of an organ.</p>
-            <p>Identify and locate the major organs in humans and plants.</p>
-            <p>Describe the functions of the major human and plant organs.</p>
-            <p>Describe what happens in photosynthesis.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item504" />
+                    <span>Recall that the heart is an example of an organ.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item505" />
+                    <span>Identify and locate the major organs in humans and plants.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item506" />
+                    <span>Describe the functions of the major human and plant organs.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item507" />
+                    <span>Describe what happens in photosynthesis.</span></p>
+            </label>
+
         </div>
 
         <div id="7Ac Tissues" class="tabcontent">
-            <p>Recall some tissues found in the heart and plant roots.</p>
-            <p>Describe how organs and tissues are linked.</p>
-            <p>Describe the functions of different tissues in some animal and plant organs.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item508" />
+                    <span>Recall some tissues found in the heart and plant roots.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item509" />
+                    <span>Describe how organs and tissues are linked.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item510" />
+                    <span>Describe the functions of different tissues in some animal and plant organs.</span></p>
+            </label>
         </div>
 
         <div id="7Ac Working scientifically" class="tabcontent">
-            <p>Identify and name some parts of a microscope.</p>
-            <p>Describe how to make a slide and explain what the coverslip is for.</p>
-            <p>Explain how the parts of a microscope work.</p>
-            <p>Describe how to use a microscope to look at a specimen on a slide.</p>
-            <p>Work out microscope magnifications.</p>
-            <p>Estimate the sizes of specimens seen under a microscope.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item511" />
+                    <span>Identify and name some parts of a microscope.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item512" />
+                    <span>Describe how to make a slide and explain what the coverslip is for.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item513" />
+                    <span>Explain how the parts of a microscope work.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item514" />
+                    <span>Describe how to use a microscope to look at a specimen on a slide.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item515" />
+                    <span>Work out microscope magnifications.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item516" />
+                    <span>Estimate the sizes of specimens seen under a microscope.</span></p>
+            </label>
         </div>
 
         <div id="7Ad Cells" class="tabcontent">
-            <p>Identify a cell as an animal cell or a plant cell.</p>
-            <p>Name some of the parts of cells.</p>
-            <p>Name the parts of animal and plant cells and describe their functions.</p>
-            <p>Identify and name some specialised cells and describe what they do.</p>
-            <p>Explain how and why certain cells are specialised.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item517" />
+                    <span>Identify a cell as an animal cell or a plant cell.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item518" />
+                    <span>Name some of the parts of cells.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item519" />
+                    <span>Name the parts of animal and plant cells and describe their functions.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item520" />
+                    <span>Identify and name some specialised cells and describe what they do.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item521" />
+                    <span>Explain how and why certain cells are specialised.</span></p>
+            </label>
         </div>
 
         <div id="7Ae Organ systems" class="tabcontent">
-            <p>Describe how cells, tissues, organs and organ systems are linked.</p>
-            <p>Recall some of the organ systems in plants and animals and what they do.</p>
-            <p>Recall the organs in some plant and animal organ systems.</p>
-
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item522" />
+                    <span>Describe how cells, tissues, organs and organ systems are linked.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item523" />
+                    <span>Recall some of the organ systems in plants and animals and what they do.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item524" />
+                    <span>Recall the organs in some plant and animal organ systems.</span></p>
+            </label>
         </div>
 
         <div class="clearfix"></div>
@@ -231,7 +161,6 @@
         <div class="numbertext">2 / 5</div>
         <img src="images/Sexual-reproduction-ks3.png" style="width:100%; height:50vh; object-fit:cover;">
         <h2>7B Sexual reproduction in animals</h2>
-        <!--        <p>Move the mouse over a button inside the tabbed menu:</p>-->
         <div class="tab">
             <button class="tablinks" onmouseover="openCity(event, '7Ba Working scientifically')">7Ba Working scientifically</button>
             <button class="tablinks" onmouseover="openCity(event, '7Ba Animal sexual reproduction')">7Ba Animal sexual reproduction</button>
@@ -242,47 +171,125 @@
         </div>
 
         <div id="7Ba Working scientifically" class="tabcontent">
-            <p>State what is meant by the scientific method.</p>
-            <p>Identify steps often used in the scientific method.</p>
-            <p>Explain why we use the scientific method.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item525" />
+                    <span>State what is meant by the scientific method.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item526" />
+                    <span>Identify steps often used in the scientific method.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item527" />
+                    <span>Explain why we use the scientific method.</span></p>
+            </label>
         </div>
 
         <div id="7Ba Animal sexual reproduction" class="tabcontent">
-            <p>Describe how some animals care for their offspring.</p>
-            <p>State what sexual reproduction is.</p>
-            <p>Recall what gametes (sex cells) are.</p>
-            <p>Describe what happens in fertilisation.</p>
-            <p>Describe some differences in how animals reproduce.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item528" />
+                    <span>Describe how some animals care for their offspring.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item529" />
+                    <span>State what sexual reproduction is.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item530" />
+                    <span>Recall what gametes (sex cells) are.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item531" />
+                    <span>Describe what happens in fertilisation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item532" />
+                    <span>Describe some differences in how animals reproduce.</span></p>
+            </label>
         </div>
 
         <div id="7Bb Reproductive organs" class="tabcontent">
-            <p>Name and identify the main reproductive organs in humans.</p>
-            <p>Describe the functions of the reproductive organs in humans.</p>
-            <p>Explain how sperm and egg cells are adapted to their functions.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item533" />
+                    <span>Name and identify the main reproductive organs in humans.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item534" />
+                    <span>Describe the functions of the reproductive organs in humans.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item535" />
+                    <span>Explain how sperm and egg cells are adapted to their functions.</span></p>
+            </label>
         </div>
 
         <div id="7Bc Becoming pregnant" class="tabcontent">
-            <p>Describe how sexual intercourse leads to fertilisation.</p>
-            <p>Describe what happens in implantation.</p>
-            <p>Describe how fertilisation leads to the forming of an embryo.</p>
-            <p>Explain how identical and non-identical twins occur.</p>
-            <p>Describe how materials are supplied and removed from the foetus.</p>
-            <p>Describe how a foetus is protected in the uterus.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item536" />
+                    <span>Describe how sexual intercourse leads to fertilisation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item537" />
+                    <span>Describe what happens in implantation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item538" />
+                    <span>Describe how fertilisation leads to the forming of an embryo.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item539" />
+                    <span>Explain how identical and non-identical twins occur.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item540" />
+                    <span>Describe how materials are supplied and removed from the foetus.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item541" />
+                    <span>Describe how a foetus is protected in the uterus.</span></p>
+            </label>
         </div>
 
         <div id="7Bd Gestation and birth" class="tabcontent">
-            <p>Identify the stages of growth during the gestation period.</p>
-            <p>Describe what happens during labour and birth.</p>
-            <p>Describe the changes in diet needed by a baby.</p>
-            <p>Describe how a foetus can be harmed inside the mother.</p>
-            <p>Explain why breast milk is best for newborn babies.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item542" />
+                    <span>Identify the stages of growth during the gestation period.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item543" />
+                    <span>Describe what happens during labour and birth.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item544" />
+                    <span>Describe the changes in diet needed by a baby.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item545" />
+                    <span>Describe how a foetus can be harmed inside the mother.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item546" />
+                    <span>Explain why breast milk is best for newborn babies.</span></p>
+            </label>
         </div>
 
         <div id="7Be Growing up" class="tabcontent">
-            <p>Compare the life cycles of different animals.</p>
-            <p>Describe the changes that occur during puberty and adolescence.</p>
-            <p>Describe what happens in the menstrual cycle.</p>
-            <p>Explain the purpose of the menstrual cycle.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item547" />
+                    <span>Compare the life cycles of different animals.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item548" />
+                    <span>Describe the changes that occur during puberty and adolescence.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item549" />
+                    <span>Describe what happens in the menstrual cycle.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item550" />
+                    <span>Explain the purpose of the menstrual cycle.</span></p>
+            </label>
         </div>
 
         <div class="clearfix"></div>
@@ -302,45 +309,117 @@
         </div>
 
         <div id="7Ca Muscles and breathing" class="tabcontent">
-            <p>State some things that the body needs.</p>
-            <p>Identify the main organs in the human gas exchange system.</p>
-            <p>Recall what happens in respiration.</p>
-            <p>Describe how breathing movements occur.</p>
-            <p>Describe what happens when muscles contract and relax.</p>
-            <p>Explain how muscles are adapted to their function.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item551" />
+                    <span>State some things that the body needs.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item552" />
+                    <span>Identify the main organs in the human gas exchange system.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item553" />
+                    <span>Recall what happens in respiration.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item554" />
+                    <span>Describe how breathing movements occur.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item555" />
+                    <span>Describe what happens when muscles contract and relax.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item556" />
+                    <span>Explain how muscles are adapted to their function.</span></p>
+            </label>
         </div>
 
         <div id="7Cb Muscles and blood" class="tabcontent">
-            <p>State a reason why someone might start breathing faster.</p>
-            <p>State what the pulse rate measures and where it is measured.</p>
-            <p>Explain how the circulatory system gets blood around the body.</p>
-            <p>Describe the functions of red blood cells, white blood cells and plasma.</p>
-            <p>Explain how capillaries are adapted to their function.</p>
-            <p>Explain how red blood cells are adapted to their function.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item557" />
+                    <span>State a reason why someone might start breathing faster.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item558" />
+                    <span>State what the pulse rate measures and where it is measured.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item559" />
+                    <span>Explain how the circulatory system gets blood around the body.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item560" />
+                    <span>Describe the functions of red blood cells, white blood cells and plasma.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item561" />
+                    <span>Explain how capillaries are adapted to their function.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item562" />
+                    <span>Explain how red blood cells are adapted to their function.</span></p>
+            </label>
         </div>
 
         <div id="7Cb Working scientifically" class="tabcontent">
-            <p>Describe the role of scientific questions in the scientific method.</p>
-            <p>Identify scientific, non-scientific and ethical questions.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item563" />
+                    <span>Describe the role of scientific questions in the scientific method.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item564" />
+                    <span>Identify scientific, non-scientific and ethical questions.</span></p>
+            </label>
         </div>
 
         <div id="7Cc The skeleton" class="tabcontent">
-            <p>Recall the functions of the skeleton.</p>
-            <p>Identify and recall the functions of some bones in the skeleton.</p>
-            <p>Describe the basic parts of joints.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item565" />
+                    <span>Recall the functions of the skeleton.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item566" />
+                    <span>Identify and recall the functions of some bones in the skeleton.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item567" />
+                    <span>Describe the basic parts of joints.</span></p>
+            </label>
         </div>
 
         <div id="7Cd Muscles and moving" class="tabcontent">
-            <p>Describe how muscles and bones work together to allow movement.</p>
-            <p>Explain why antagonistic muscles are needed in many joints.</p>
-            <p>Describe how muscle action is controlled by the nervous system.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item568" />
+                    <span>Describe how muscles and bones work together to allow movement.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item569" />
+                    <span>Explain why antagonistic muscles are needed in many joints.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item570" />
+                    <span>Describe how muscle action is controlled by the nervous system.</span></p>
+            </label>
         </div>
 
         <div id="7Ce Drugs" class="tabcontent">
-            <p>Recall what drugs are and describe some problems they can cause.</p>
-            <p>Recall the effects and side-effects of some drugs, including the effects of stimulants and depressants on reaction time.</p>
-            <p>Classify drugs as legal, illegal, medical, recreational.</p>
-            <p>Explain the short- and long-term effects of some drugs, including depressants (such as alcohol) and stimulants (such as caffeine).</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item571" />
+                    <span>Recall what drugs are and describe some problems they can cause.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item572" />
+                    <span>Recall the effects and side-effects of some drugs, including the effects of stimulants and depressants on reaction time.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item573" />
+                    <span>Classify drugs as legal, illegal, medical, recreational.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item574" />
+                    <span>Explain the short- and long-term effects of some drugs, including depressants (such as alcohol) and stimulants (such as caffeine).</span></p>
+            </label>
         </div>
 
         <div class="clearfix"></div>
@@ -359,46 +438,121 @@
         </div>
 
         <div id="7Da Variation" class="tabcontent">
-            <p>Identify variation between organisms of the same and different types.</p>
-            <p>Identify continuous and discontinuous variation.</p>
-            <p>Correctly use the terms habitat and species.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item575" />
+                    <span>Identify variation between organisms of the same and different types.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item576" />
+                    <span>Identify continuous and discontinuous variation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item577" />
+                    <span>Correctly use the terms habitat and species.</span></p>
+            </label>
         </div>
 
         <div id="7Da Working scientifically" class="tabcontent">
-            <p>Present information using bar charts and scatter graphs.</p>
-            <p>Choose an appropriate bar chart or a scatter graph to present data.</p>
-            <p>Identify relationships using scatter graphs.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item578" />
+                    <span>Present information using bar charts and scatter graphs.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item579" />
+                    <span>Choose an appropriate bar chart or a scatter graph to present data.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item580" />
+                    <span>Identify relationships using scatter graphs.</span></p>
+            </label>
         </div>
 
         <div id="7Db Adaptations" class="tabcontent">
-            <p>List some physical environmental factors in an environment.</p>
-            <p>Describe how organisms are adapted to their habitats.</p>
-            <p>Identify and give examples of inherited variation.</p>
-            <p>Correctly use the terms ecosystem and community.</p>
-            <p>Explain how inherited variation is caused.</p>
-            <p>Explain how adaptations increase the chances of survival for organisms.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item581" />
+                    <span>List some physical environmental factors in an environment.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item582" />
+                    <span>Describe how organisms are adapted to their habitats.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item583" />
+                    <span>Identify and give examples of inherited variation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item584" />
+                    <span>Correctly use the terms ecosystem and community.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item585" />
+                    <span>Explain how inherited variation is caused.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item586" />
+                    <span>Explain how adaptations increase the chances of survival for organisms.</span></p>
+            </label>
         </div>
 
         <div id="7Dc Effects of the environment" class="tabcontent">
-            <p>Describe daily and seasonal changes.</p>
-            <p>Identify and give examples of environmental variation.</p>
-            <p>Describe how organisms respond to daily and seasonal changes.</p>
-            <p>Explain how daily and seasonal changes affect populations and communities.</p>
-            <p>Explain how environmental variation is caused.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item587" />
+                    <span>Describe daily and seasonal changes.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item588" />
+                    <span>Identify and give examples of environmental variation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item589" />
+                    <span>Describe how organisms respond to daily and seasonal changes.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item590" />
+                    <span>Explain how daily and seasonal changes affect populations and communities.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item591" />
+                    <span>Explain how environmental variation is caused.</span></p>
+            </label>
         </div>
 
         <div id="7Dd Effects on the environment" class="tabcontent">
-            <p>Use food chains to make food webs and spot food chains in food web.</p>
-            <p>State the resources organisms need from their habitats.</p>
-            <p>Explain why organisms are in competition in a habitat.</p>
-            <p>Explain how changes in a population or community in an ecosystem affect other populations.</p>
-            <p>Use food webs to predict changes in populations.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item592" />
+                    <span>Use food chains to make food webs and spot food chains in food web.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item593" />
+                    <span>State the resources organisms need from their habitats.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item594" />
+                    <span>Explain why organisms are in competition in a habitat.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item595" />
+                    <span>Explain how changes in a population or community in an ecosystem affect other populations.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item596" />
+                    <span>Use food webs to predict changes in populations.</span></p>
+            </label>
         </div>
 
         <div id="7De Transfers in food chains" class="tabcontent">
-            <p>Explain how energy is lost in food chains.</p>
-            <p>Interpret and draw pyramids of numbers.</p>
-            <p>Explain the effects of some persistent pesticides on ecosystems.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item597" />
+                    <span>Explain how energy is lost in food chains.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item598" />
+                    <span>Interpret and draw pyramids of numbers.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item599" />
+                    <span>Explain the effects of some persistent pesticides on ecosystems.</span></p>
+            </label>
         </div>
 
         <div class="clearfix"></div>
@@ -418,46 +572,122 @@
         </div>
 
         <div id="8Ba Classification and biodiversity" class="tabcontent">
-            <p>Describe the characteristics of organisms in the five kingdoms.</p>
-            <p>Describe how organisms are further classified in their kingdoms.</p>
-            <p>Identify the genus and species names from a scientific name.</p>
-            <p>Explain why biodiversity is important.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item600" />
+                    <span>Describe the characteristics of organisms in the five kingdoms.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item601" />
+                    <span>Describe how organisms are further classified in their kingdoms.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item602" />
+                    <span>Identify the genus and species names from a scientific name.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item603" />
+                    <span>Explain why biodiversity is important.</span></p>
+            </label>
         </div>
 
         <div id="8Ba Working scientifically" class="tabcontent">
-            <p>Describe how a quadrat is used to collect samples.</p>
-            <p>Use a sample to calculate an estimate.</p>
-            <p>Explain the effects of too small and too big a sample size.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item604" />
+                    <span>Describe how a quadrant is used to collect samples.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item605" />
+                    <span>Use a sample to calculate an estimate.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item606" />
+                    <span>Explain the effects of too small and too big a sample size.</span></p>
+            </label>
+
         </div>
 
         <div id="8Bb Types of reproduction" class="tabcontent">
-            <p>State the difference between asexual and sexual reproduction.</p>
-            <p>Recall ways in which plants reproduce asexually.</p>
-            <p>Describe what happens during fertilisation.</p>
-            <p>Identify and give examples of inherited variation.</p>
-            <p>Explain how inherited variation is caused.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item607" />
+                    <span>State the difference between asexual and sexual reproduction.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item608" />
+                    <span>Recall ways in which plants reproduce asexually.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item609" />
+                    <span>Describe what happens during fertilisation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item610" />
+                    <span>Identify and give examples of inherited variation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item611" />
+                    <span>Explain how inherited variation is caused.</span></p>
+            </label>
         </div>
 
         <div id="8Bc Pollination" class="tabcontent">
-            <p>Identify the main parts of a flower and describe their functions.</p>
-            <p>Use flower shape or pollen type to work out how a plant is pollinated.</p>
-            <p>Describe how the parts of a flower are adapted to their functions.</p>
-            <p>Explain how and why plants avoid self-pollination.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item612" />
+                    <span>Identify the main parts of a flower and describe their functions.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item613" />
+                    <span>Use flower shape or pollen type to work out how a plant is pollinated.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item614" />
+                    <span>Describe how the parts of a flower are adapted to their functions.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item615" />
+                    <span>Explain how and why plants avoid self-pollination.</span></p>
+            </label>
         </div>
 
         <div id="8Bd Fertilisation and dispersal" class="tabcontent">
-            <p>Identify the different parts of a seed.</p>
-            <p>Identify different kinds of fruits and describe how they disperse seeds.</p>
-            <p>Describe what happens after pollination and before fertilisation.</p>
-            <p>Describe how a fertilised egg cell grows into an embryo.</p>
-            <p>Explain the importance of seed dispersal.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item616" />
+                    <span>Identify the different parts of a seed.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item617" />
+                    <span>Identify different kinds of fruits and describe how they disperse seeds.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item618" />
+                    <span>Describe what happens after pollination and before fertilisation.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item619" />
+                    <span>Describe how a fertilised egg cell grows into an embryo.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item620" />
+                    <span>Explain the importance of seed dispersal.</span></p>
+            </label>
         </div>
 
         <div id="8Be Germination and growth" class="tabcontent">
-            <p>Describe the life cycle of a flowering plant.</p>
-            <p>Recall the resources needed for germination and how this occurs.</p>
-            <p>Describe what happens in photosynthesis and respiration.</p>
-            <p>Describe examples of interdependence and how changes in a population or community affect other populations.</p>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item621" />
+                    <span>Describe the life cycle of a flowering plant.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item622" />
+                    <span>Recall the resources needed for germination and how this occurs.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item623" />
+                    <span>Describe what happens in photosynthesis and respiration.</span></p>
+            </label>
+            <label>
+                <p><input type="checkbox" class="progress-item" id="item624" />
+                    <span>Describe examples of interdependence and how changes in a population or community affect other populations.</span></p>
+            </label>
         </div>
 
         <div class="clearfix"></div>
@@ -533,6 +763,62 @@
       document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
     }
+</script>
+<script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    // Load saved states
+    checkboxes.forEach(checkbox => {
+        const savedState = localStorage.getItem(checkbox.id);
+
+        if (savedState === 'true') {
+            checkbox.checked = true;
+        }
+
+        // Save state when changed
+        checkbox.addEventListener('change', () => {
+            localStorage.setItem(checkbox.id, checkbox.checked);
+        });
+    });
+</script>
+
+<script>
+    function updateOverallProgress() {
+
+        // Find every checkbox in all 7 slides
+        const checkboxes = document.querySelectorAll(".progress-item");
+
+        // Count checked boxes
+        const checked = document.querySelectorAll(".progress-item:checked").length;
+
+        // Total number of boxes
+        const total = checkboxes.length;
+
+        // Calculate percentage
+        let percentage = 0;
+
+        if (total > 0) {
+            percentage = Math.round((checked / total) * 100);
+        }
+
+        // Display percentage
+        document.getElementById("overallPercentage").textContent =
+            percentage + "%";
+    }
+
+
+    // Update percentage whenever a checkbox is ticked/unticked
+    document.addEventListener("change", function(event) {
+
+        if (event.target.classList.contains("progress-item")) {
+            updateOverallProgress();
+        }
+
+    });
+
+
+    // Set initial percentage
+    updateOverallProgress();
 </script>
 </body>
 </html>
