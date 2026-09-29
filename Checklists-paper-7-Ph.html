@@ -1,168 +1,30 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="stylechecklists-paper-1.css">-->
-<style>
-    body {
-      font-family: Arial;
-      margin: 0;
-    }
-    img{
-       width: 100%;
-       height: 25vh;
-       object-fit: cover;
-    }
-    * {
-      box-sizing: border-box;
-    }
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5YPNJ85GL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    img {
-      vertical-align: middle;
-    }
-
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Five columns side by side */
-    .column {
-      float: left;
-      width: 20%;
-    }
-
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-      opacity: 1;
-    }
-
-    * {box-sizing: border-box}
-        body {font-family: "Lato", sans-serif;}
-
-        /* Style the tab */
-        .tab {
-          float: left;
-          border: 1px solid #ccc;
-          background-color: #e5e5e5;
-          width: 30%;
-          height: auto;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-          display: block;
-          background-color: inherit;
-          color: black;
-          padding: 22px 16px;
-          width: 100%;
-          border: none;
-          outline: none;
-          text-align: left;
-          cursor: pointer;
-          font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-          background-color: #ddd;
-        }
-
-        /* Create an active/current "tab button" class */
-        .tab button.active {
-          background-color: #a69cac;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-          float: left;
-          padding: 0px 12px;
-          border-top: 1px solid #ccc;
-          width: 70%;
-          border-left: none;
-          height: 100%;
-          display: none;
-        }
-
-        /* Clear floats after the tab */
-        .clearfix::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-
-</style>
+        gtag('config', 'G-D5YPNJ85GL');
+    </script>
+    <title>Checklist paper 7 Physics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style-Checklists-paper-7-Ph.css">
+</head>
 <body>
 
-<h2 style="text-align:center">Checklists Physics</h2>
+<h2 style="text-align:center">Checklist Physics</h2>
 
 <div class="container">
+
+    <div class="overall-progress">
+        <span>Overall Progress: </span>
+        <strong id="overallPercentage">0%</strong>
+    </div>
+
     <div class="mySlides">
         <div class="numbertext">1 / 5</div>
         <img src="images/TNBLOG_7WaysBodyEnergy_850x500_V1_R1.webp" style="width:100%; height:50vh; object-fit:cover;">
@@ -513,6 +375,62 @@
       document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
     }
+</script>
+<script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    // Load saved states
+    checkboxes.forEach(checkbox => {
+        const savedState = localStorage.getItem(checkbox.id);
+
+        if (savedState === 'true') {
+            checkbox.checked = true;
+        }
+
+        // Save state when changed
+        checkbox.addEventListener('change', () => {
+            localStorage.setItem(checkbox.id, checkbox.checked);
+        });
+    });
+</script>
+
+<script>
+    function updateOverallProgress() {
+
+        // Find every checkbox in all 7 slides
+        const checkboxes = document.querySelectorAll(".progress-item");
+
+        // Count checked boxes
+        const checked = document.querySelectorAll(".progress-item:checked").length;
+
+        // Total number of boxes
+        const total = checkboxes.length;
+
+        // Calculate percentage
+        let percentage = 0;
+
+        if (total > 0) {
+            percentage = Math.round((checked / total) * 100);
+        }
+
+        // Display percentage
+        document.getElementById("overallPercentage").textContent =
+            percentage + "%";
+    }
+
+
+    // Update percentage whenever a checkbox is ticked/unticked
+    document.addEventListener("change", function(event) {
+
+        if (event.target.classList.contains("progress-item")) {
+            updateOverallProgress();
+        }
+
+    });
+
+
+    // Set initial percentage
+    updateOverallProgress();
 </script>
 </body>
 </html>
